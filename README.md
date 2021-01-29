@@ -19,8 +19,19 @@ Or install it yourself as:
     $ gem install ginger_panda_view_tool
 
 ## Usage
+>This tool/command takes to two string arguments(name , and a message)
+> It will prepend a copyright html symbol
 
-TODO: Write usage instructions here
+
+
+```ruby
+@copyright = GingerPandaViewTool::Renderer.copyright 'Insert your name here', 'All rights reserved'
+```
+
+> In rails you would have to render this instance variable ie
+``` ruby
+<%= @copyright %>
+```
 
 ## Development
 
